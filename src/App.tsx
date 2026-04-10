@@ -35,7 +35,7 @@ const InstagramCard = () => (
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full border-2 border-beige p-0.5">
           <img 
-            src="./image (10).png" 
+            src="/labanya_roy_portfolio_2026/image (10).png" 
             alt="Labanya" 
             className="w-full h-full rounded-full object-cover"
             referrerPolicy="no-referrer"
@@ -84,7 +84,7 @@ const LinkedInCard = () => (
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full border-2 border-burgundy p-0.5">
           <img 
-            src="./WhatsApp Image 2024-02-02 at 00.27.25_2a93954d.jpg" 
+            src="/labanya_roy_portfolio_2026/WhatsApp Image 2024-02-02 at 00.27.25_2a93954d.jpg" 
             alt="LinkedIn" 
             className="w-full h-full rounded-full object-cover"
             referrerPolicy="no-referrer"
@@ -360,7 +360,7 @@ export default function App() {
               className="absolute top-8 right-8 bg-burgundy/80 backdrop-blur-md text-cream p-4 rounded-2xl flex items-center gap-3 shadow-2xl border border-cream/10"
             >
               <div className="w-10 h-10 rounded-full overflow-hidden border border-cream/20">
-                <img src="./WhatsApp Image 2025-08-27 at 19.26.07_8b094d64.jpg" alt="Profile" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="/labanya_roy_portfolio_2026/WhatsApp Image 2025-08-27 at 19.26.07_8b094d64.jpg" alt="Profile" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-widest opacity-60">Field</p>
@@ -454,7 +454,7 @@ export default function App() {
           </div>
           <div className="rounded-[3rem] overflow-hidden h-[400px]">
             <img 
-              src="./image (9).png" 
+              src="/labanya_roy_portfolio_2026/image (9).png" 
               alt="Fashion Aesthetic" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -591,7 +591,7 @@ export default function App() {
           <div className="card-beige p-12 relative overflow-hidden">
             <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-burgundy shadow-2xl flex-shrink-0">
-                <img src="./WhatsApp Image 2025-08-27 at 19.26.07_8b094d64.jpg" alt="Visual Diary" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="/labanya_roy_portfolio_2026/WhatsApp Image 2025-08-27 at 19.26.07_8b094d64.jpg" alt="Visual Diary" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <div>
                 <h2 className="text-display text-6xl mb-4">Visual Diary</h2>
