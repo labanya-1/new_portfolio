@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Serif:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Instrument Serif", serif;
+  
+  --color-burgundy: #4a0404;
+  --color-burgundy-light: #6b0f0f;
+  --color-cream: #f5f2ed;
+  --color-beige: #d9c5b2;
+  --color-accent: #8b0000; 
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-burgundy font-sans selection:bg-burgundy selection:text-cream cursor-none;
+  }
+
+  /* Custom Cursor */
+  .cursor-dot {
+    @apply fixed top-0 left-0 w-1.5 h-1.5 bg-burgundy rounded-full pointer-events-none z-[9999];
+    transition: transform 0.1s ease-out;
+  }
+  .cursor-outline {
+    @apply fixed top-0 left-0 w-8 h-8 border border-burgundy/30 rounded-full pointer-events-none z-[9998];
+    transition: transform 0.15s ease-out, width 0.3s, height 0.3s, border-color 0.3s;
+  }
+
+  /* Grain Texture Overlay */
+  .grain {
+    @apply fixed inset-0 pointer-events-none z-[10000] opacity-[0.04];
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+}
+
+.card-burgundy {
+  @apply bg-burgundy text-cream rounded-[2rem] overflow-hidden;
+}
+
+.card-beige {
+  @apply bg-beige/30 border border-beige rounded-[2rem] overflow-hidden;
+}
+
+.text-display {
+  @apply font-display italic leading-none;
+}
+
+.pinterest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 10px;
+}
+
+.pinterest-item {
+  grid-row-end: span 20;
+}
+
+.pinterest-item-large {
+  grid-row-end: span 30;
+}
+
+.pinterest-item-small {
+  grid-row-end: span 15;
+}
