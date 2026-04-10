@@ -143,7 +143,7 @@ const PinterestItem = ({ src, title, caption, size = "pinterest-item" }: Pintere
     className={`${size} relative rounded-[2rem] overflow-hidden group mb-6 cursor-none shadow-lg hover:shadow-2xl transition-shadow duration-500`}
   >
     <img 
-      src={src} 
+      src={img(src)} 
       alt={title} 
       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
       referrerPolicy="no-referrer"
