@@ -333,7 +333,7 @@ export default function App() {
               initial={{ scale: 1.1 }}
               animate={{ scale: 1 }}
               transition={{ duration: 1.5, ease: "easeOut" }}
-              src="https://picsum.photos/seed/aesthetic/1200/800" 
+              src={img("image (3).png")} 
               alt="Hero" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -390,13 +390,13 @@ export default function App() {
           <div className="md:col-span-1 flex flex-col gap-4">
             <div className="flex gap-2">
               <div className="w-16 h-16 rounded-full overflow-hidden border border-beige">
-                <img src="https://picsum.photos/seed/art1/200/200" alt="Art" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src={img("image (4).png")} alt="Art" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <div className="w-16 h-16 rounded-full overflow-hidden border border-beige">
-                <img src="https://picsum.photos/seed/art2/200/200" alt="Art" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src={img("image (5).png")} alt="Art" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <div className="w-16 h-16 rounded-full overflow-hidden border border-beige">
-                <img src="https://picsum.photos/seed/art3/200/200" alt="Art" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src={img("image (7).png")} alt="Art" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
             </div>
             <h2 className="text-display text-5xl">About Me</h2>
